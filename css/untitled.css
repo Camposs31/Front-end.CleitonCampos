@@ -1,0 +1,132 @@
+/* css padrao */
+
+
+* {
+		
+  box-sizing: border-box;
+		
+}
+
+		
+body {
+		
+    font-family: Arial, Helvetica, sans-serif;
+		
+}
+
+		
+form div {
+	background-color: #ac8f00;
+	border: 50px;
+	margin: 0px -1px;
+	padding: 10px;
+}
+
+
+label {
+	margin-bottom: 4px;
+	font-size: 1rem;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #2E2503;
+}
+
+
+input {
+	padding: 15px;
+}
+
+[type="text"], [type=email], textarea, label {
+	display: block;
+	width: 100%;
+}
+
+/* Style the header */
+header {
+  	background-color: #000000;
+  	padding: 50px;
+  	text-align: center;
+  	font-size: 35px;
+  	color: #AC963A;
+
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  	float: left;
+  	width: 30%;
+	  background: #ffffff;
+  	padding: 0px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  	list-style-type: none;
+  	padding: 4px;
+  	font-size: large;
+  	color: #000000;
+}
+
+article {
+	  float: left;
+  	padding: 20px;
+  	width: 70%;
+  	background-color: #695a1f;
+}
+
+/* Clear floats after the columns */
+section::after {
+  	background: #ac963a;
+  	content:"";
+  	display: table;
+  	clear: both;
+}
+
+/* Style the footer */
+footer {
+  	background-color: #000000;
+  	padding: 10px;
+  	text-align: center;
+  	color: #AC963A;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+
+/*
+	top (superior/cima)
+	bottom (inferior/baixo)
+	left (esquerda)
+	right (direita)
+*/
+
+form div {
+	position: static;
+	position: relative;
+	top: 10px;
+}
+
+label {
+	position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			}
